@@ -5,9 +5,10 @@ SensorInstruction.py contains the SensorInstruction class, which is a subclass o
 2. Contains the sensor data
 
 '''
+from Instructions.Sensor.SensorInfo import SensorInfo
 
 class SensorInstruction:
-    def __init__(this, sensorInfo):
+    def __init__(this, sensorInfo: SensorInfo):
         this.sensorInfo = sensorInfo
     def get_sensor_info(this):
         return this.sensorInfo

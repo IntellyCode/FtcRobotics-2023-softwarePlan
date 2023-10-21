@@ -2,8 +2,14 @@
 This class checks if the A key is presses or not in the read() method
 """
 import keyboard
-class A_Sensor():
-    def __init__(this):
-        pass
+from Instructions.Sensor.Sensor import Sensor
+
+"""
+
+An extension of the Sensor class
+
+"""
+class A_Sensor(Sensor):
+
     def read(this):
         return keyboard.is_pressed('a')

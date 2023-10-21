@@ -8,11 +8,11 @@ MotionComponent class
 from Instructions.Motion.MotionInstruction import MotionInstruction
 
 class MotionComponent():
-    def set_motion_instruction(this, motion_instruction):
-        this.motion_instruction = motion_instruction
-
-    def get_motion_instruction(this):
-        return this.motion_instruction
     
+    #This method is called when a new instruction is about to set
+    def set_motion_instruction(this, motion_instruction:MotionInstruction):
+        this.motion_instruction = motion_instruction
+        
+    #This method is called when the motion instruction is to be executed
     def perform_motion_instruction(this):
         this.motion_instruction.perform()
